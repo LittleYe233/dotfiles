@@ -1,0 +1,31 @@
+nemo # file manager
+firefox # web browser
+gnome-tweaks # settings
+tmux
+ncdu # folder size TUI
+tealdeer # TL;DR
+exfat-utils
+dunst # notification daemon
+eza # alternative to ls
+tree
+plocate # quick search files
+fd # alternative to find
+fzf # Ctrl+R history
+ark # KDE compression tool
+okular # KDE PDF/Markdown reader
+the_silver_searcher
+ripgrep # alternative to grep
+texlive
+qbittorrent
+caddy # local web server
+neovim # alternative to vim
+zsh
+git
+nodejs # for hitsz-web-login
+base-devel
+zsh-syntax-highlighting
+zsh-autosuggestions
+rsync
+sddm
+qt6-svg # for sddm theme
+ttf-opensans # for sddm theme

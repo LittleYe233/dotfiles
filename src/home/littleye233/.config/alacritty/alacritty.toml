@@ -1,0 +1,15 @@
+[window]
+opacity = 0.8
+
+[scrolling]
+history = 100000
+multiplier = 6
+
+[font]
+normal.family = "monospace"
+
+[cursor]
+style.blinking = "On"
+
+[terminal]
+shell = "/bin/zsh"

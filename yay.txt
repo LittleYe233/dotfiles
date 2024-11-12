@@ -1,0 +1,10 @@
+visual-studio-code-insiders-bin
+zotero-bin # read papers
+youtube-music-bin
+libtiff5 # for WPS PDF
+wps-office
+hyprpolkitagent-git
+trashy-git # command-line trash can
+64gram-desktop-bin
+flameshot-git # screenshot
+clipse-bin # clipboard

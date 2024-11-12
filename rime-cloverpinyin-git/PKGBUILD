@@ -1,0 +1,38 @@
+# Maintainer: LittleYe233 <littleye233@gmail.com>
+
+pkgname=rime-cloverpinyin-git
+pkgver=2024.11.12.92ab552
+pkgrel=1
+pkgdesc="Clover Simplified pinyin input for rime (git version from LittleYe233)"
+arch=('x86_64')
+url="https://www.fkxxyz.com/d/cloverpinyin/"
+license=('LGPL')
+depends=('rime-prelude' 'rime-emoji' 'rime-symbols')
+makedepends=('librime' 'python-jieba' 'pypinyin' 'opencc' 'python-requests' 'git-lfs')
+source=("git+https://github.com/LittleYe233/rime-cloverpinyin.git")
+sha256sums=('SKIP')
+pkgname_raw=rime-cloverpinyin
+
+pkgver() {
+    git -C ${pkgname_raw} --no-pager log -1 --format="%cd.%h" --date=short | sed 's/-/./g'
+}
+
+prepare() {
+    cd ${pkgname_raw}
+    git submodule update --init
+    git -C chinese-dictionary-3.6million lfs install
+    git -C chinese-dictionary-3.6million lfs pull
+}
+
+build() {
+    cd $srcdir/${pkgname_raw}
+    ./build.sh > /dev/null 2>&1
+}
+
+package() {
+    cd $srcdir/${pkgname_raw}/data
+    rm -rf opencc
+    install -Dm644 *.yaml -t "$pkgdir"/usr/share/rime-data/
+    install -Dm644 build/* -t "$pkgdir"/usr/share/rime-data/build/
+}
+

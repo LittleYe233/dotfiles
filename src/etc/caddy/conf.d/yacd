@@ -1,0 +1,4 @@
+http://localhost:7889 {
+	root * /var/opt/Yacd-meta-gh-pages
+	file_server
+}

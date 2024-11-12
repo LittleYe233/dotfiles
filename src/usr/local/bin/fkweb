@@ -1,0 +1,3 @@
+#!/bin/sh
+
+node /opt/hitsz-web-login/main.js 210210631 yezhifan20030301
