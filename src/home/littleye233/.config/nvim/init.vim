@@ -92,7 +92,7 @@ Plug 'nvim-tree/nvim-web-devicons'
 " Plug 'lewis6991/gitsigns.nvim'
 " Plug 'https://github.com/adelarsq/neoline.vim'
 Plug 'nvim-lualine/lualine.nvim'
-" Plug 'lambdalisue/suda.vim'
+Plug 'lambdalisue/suda.vim'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 call plug#end()
