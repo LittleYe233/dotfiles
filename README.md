@@ -1,2 +1,2 @@
-It is fit for commit [a4061cb7a9010436fa9a8047bce51b7b76f7b0dd](https://github.com/end-4/dots-hyprland/tree/a4061cb7a9010436fa9a8047bce51b7b76f7b0dd) of end-4's dotfiles.
+It is fit for commit [0475a6e2c6fd881b27f31e5b10685a8192812f3d](https://github.com/end-4/dots-hyprland/tree/0475a6e2c6fd881b27f31e5b10685a8192812f3d) of end-4's dotfiles.
 
