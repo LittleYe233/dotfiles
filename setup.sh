@@ -33,6 +33,9 @@ cmdwrap bash -c "cat yay.txt | sed 's/#.*$//g' | xargs yay -S --needed"
 # BUT you should ensure this hyprland dotfiles are installed before continuing
 cmdwrap bash -c "bash <(curl -s 'https://end-4.github.io/dots-hyprland-wiki/setup.sh')"
 
+# Fix issue #1030 of dots-hyprland
+cmdwrap sed -i "s/@import 'material'/@import '.\/fallback\/material'/g" ~/.config/ags/scss/main.scss
+
 cmdwrap sudo bash -c "mkdir -p /opt && cd /opt && git clone https://github.com/chiro2001/hitsz-web-login.git"
 cmdwrap bash -c "curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 cmdwrap sudo bash -c "mkdir -p /var/opt && cd /var/opt && wget https://github.com/MetaCubeX/yacd/archive/gh-pages.zip && unzip gh-pages.zip && rm gh-pages.zip"
